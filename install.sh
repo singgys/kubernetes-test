@@ -1,7 +1,7 @@
 #/!/bin/bash
 export NAMESPACE=default && \
-export DOCKER_REPOSITORY=nanit && \
-export RABBITMQ_REPLICAS=5 && \
+export DOCKER_REPOSITORY=ysingh123 && \
+export RABBITMQ_REPLICAS=3 && \
 export RABBITMQ_DEFAULT_USER=username && \
 export RABBITMQ_DEFAULT_PASS=password && \
 export RABBITMQ_ERLANG_COOKIE=secret && \
