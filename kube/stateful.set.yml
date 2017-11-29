@@ -27,7 +27,7 @@ spec:
             containerPort: 4369
           - name: dist-port
             containerPort: 25672
-        env: 
+        env:
           - name: RABBITMQ_DEFAULT_USER
             value: {{RABBITMQ_DEFAULT_USER}}
           - name: RABBITMQ_DEFAULT_PASS
@@ -44,4 +44,3 @@ spec:
                 fieldPath: metadata.name
           - name: RABBITMQ_NODENAME
             value: rabbit@$(NODE_NAME).{{SVC_NAME}}
-      {{SERVICE_ACCOUNT}}
