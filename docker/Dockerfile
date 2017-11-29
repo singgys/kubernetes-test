@@ -1,6 +1,7 @@
 FROM rabbitmq:3.6.10
 
-RUN apk add --update jq curl bash
+RUN apt-get update && \
+apt-get install jq curl bash
 
 ADD rabbitmq_delayed_message_exchange-0.0.1.ez /plugins
 ADD autocluster-0.10.0.ez  /plugins

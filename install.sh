@@ -1,3 +1,4 @@
+#/!/bin/bash
 export NAMESPACE=default && \
 export DOCKER_REPOSITORY=nanit && \
 export RABBITMQ_REPLICAS=5 && \
