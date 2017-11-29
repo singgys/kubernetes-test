@@ -60,6 +60,6 @@ deploy-rabbitmq: docker-rabbitmq
 	$(call set-ha-policy-on-rabbitmq-cluster)
 
 docker-rabbitmq:
-	$(SUDO) docker pull $(DOCKER_REPOSITORY))/$(RABBITMQ_IMAGE_NAME):$(RABBITMQ_IMAGE_TAG) || ($(SUDO) docker build -t $(RABBITMQ_IMAGE_NAME):$(RABBITMQ_IMAGE_TAG) $(RABBITMQ_DOCKER_DIR) && $(SUDO) docker push $(DOCKER_REPOSITORY)/$(RABBITMQ_IMAGE_NAME):$(RABBITMQ_IMAGE_TAG))
+	$(SUDO) docker pull $(DOCKER_REPOSITORY))/$(RABBITMQ_IMAGE_NAME):$(RABBITMQ_IMAGE_TAG) || $(SUDO) docker build -t $(RABBITMQ_IMAGE_NAME):$(RABBITMQ_IMAGE_TAG) $(RABBITMQ_DOCKER_DIR) && $(SUDO) docker push $(DOCKER_REPOSITORY)/$(RABBITMQ_IMAGE_NAME):$(RABBITMQ_IMAGE_TAG)
 
 deploy: deploy-rabbitmq
