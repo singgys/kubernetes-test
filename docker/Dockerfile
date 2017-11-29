@@ -7,6 +7,7 @@ apt-get install -y bash
 
 ADD rabbitmq_delayed_message_exchange-0.0.1.ez /plugins
 ADD autocluster-0.10.0.ez  /plugins
+ADD rabbitmq_aws-0.10.0.ez /plugins
 RUN rabbitmq-plugins enable rabbitmq_delayed_message_exchange --offline
 RUN rabbitmq-plugins enable autocluster --offline
 
