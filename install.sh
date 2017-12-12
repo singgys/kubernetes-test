@@ -1,7 +1,7 @@
 #/!/bin/bash
-export NAMESPACE=rabbitmq-cluster && \
-export DOCKER_REPOSITORY=lc3-bos201:5050 && \
-export RABBITMQ_REPLICAS=3 && \
+export NAMESPACE=default && \
+export DOCKER_REPOSITORY=ysingh123 && \
+export RABBITMQ_REPLICAS=2 && \
 export RABBITMQ_DEFAULT_USER=username && \
 export RABBITMQ_DEFAULT_PASS=password && \
 export RABBITMQ_ERLANG_COOKIE=secret && \
